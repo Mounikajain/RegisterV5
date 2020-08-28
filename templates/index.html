@@ -1,0 +1,324 @@
+
+<!DOCTYPE HTML>
+<html lang="en"  class="supernova"><head>
+<body>
+{% if messages %}
+    <center>
+    {% for x in messages %}
+        <h1>{{ x }}</h1>
+    {% endfor %}
+    </center>
+{% endif %}
+<form  action="{% url 'reg_save' %}" method="post" name="form_202372455250448" id="202372455250448" accept-charset="utf-8" autocomplete="on">
+    {% csrf_token %}
+  <input type="hidden" name="formID" value="202372455250448" />
+  <input type="hidden" id="JWTContainer" value="" />
+  <input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all">
+    <link type="text/css" rel="stylesheet" media="all" href="https://cdn.jotfor.ms/wizards/languageWizard/custom-dropdown/css/lang-dd.css?3.3.19822" />
+    <div class="cont">
+      <input type="text" id="input_language" name="input_language" style="display:none" />
+      <div class="language-dd" id="langDd" style="display:none">
+        <div class="dd-placeholder lang-emp">
+          Language
+        </div>
+        <ul class="lang-list dn" id="langList">
+          <li data-lang="en" class="en">
+            English (US)
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jotfor.ms/js/formTranslation.v2.js?3.3.19822"></script>
+    <ul class="form-section page-section">
+        <div id="cid_36" class="form-input-wide">
+          <div id="text_36" class="form-html" data-component="text">
+              <h2><p style="text-align:center;"><strong>Hackthon Registration Form</strong></p></h2>
+          </div>
+        </div>
+      <li class="form-line jf-required" data-type="control_textbox" id="id_69">
+        <label class="form-label form-label-top form-label-auto" id="label_69" for="input_69">
+          First Name
+          <span class="form-required">
+            <font color="red">*</font>
+          </span>
+        </label>
+        <div id="cid_69" class="form-input-wide jf-required">
+          <input type="text" id="input_69" name="first_name" data-type="input-textbox" class="form-textbox validate[required]" size="20" value="" data-component="textbox" aria-labelledby="label_69" required="" />
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_textbox" id="id_70">
+        <label class="form-label form-label-top form-label-auto" id="label_70" for="input_70">
+          Last Name
+          <span class="form-required">
+            <font color="red">*</font>
+          </span>
+        </label>
+        <div id="cid_70" class="form-input-wide jf-required">
+          <input type="text" id="input_70" name="last_name" data-type="input-textbox" class="form-textbox validate[required]" size="20" value="" data-component="textbox" aria-labelledby="label_70" required="" />
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_email" id="id_31">
+        <label class="form-label form-label-top form-label-auto" id="label_31" for="input_31">
+          Email address
+          <span class="form-required">
+            <font color="red">*</font>
+          </span>
+        </label>
+        <div id="cid_31" class="form-input-wide jf-required">
+          <span class="form-sub-label-container " style="vertical-align:top">
+            <input type="email" id="input_31" name="email" class="form-textbox validate[required, Email]" size="30" value="" data-component="email" aria-labelledby="label_31 sublabel_input_31" required="" />
+            <br/>
+            <label class="form-sub-label" style="border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap" for="input_31_confirm"> Confirmation Email </label>
+          </span>
+        </div>
+      </li>
+        <li class="form-line jf-required" data-type="control_email" id="id_31">
+        <label class="form-label form-label-top form-label-auto" id="label_31" for="input_31">
+         Phone number
+          <span class="form-required">
+            <font color="red">*</font>
+          </span>
+        </label>
+        <div id="cid_31" class="form-input-wide jf-required">
+          <span class="form-sub-label-container " style="vertical-align:top">
+            <input type="number" id="input_31" name="phone_no" class="form-textbox validate[required, Email]" size="30" value="" data-component="email" aria-labelledby="label_31 sublabel_input_31" required="" />
+            <br/>
+            <label class="form-sub-label" style="border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap" for="input_31_confirm"> Confirmation Email </label>
+          </span>
+        </div>
+      </li>
+        <li class="form-line jf-required" data-type="control_radio" id="id_62">
+        <label class="form-label form-label-top form-label-auto" id="label_62" for="input_62">
+          Gender
+          <span class="form-required">
+            <font color="red">*</font>
+          </span>
+        </label>
+        <div id="cid_62" class="form-input-wide jf-required">
+          <div class="form-multiple-column" data-columncount="3" role="group" aria-labelledby="label_62" data-component="radio">
+            <span class="form-radio-item">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" class="form-radio validate[required]" id="input_62_0" name="gender" value="Male" required="" />
+              <label id="label_input_62_0" for="input_62_0"> Male </label>
+            </span>
+            <span class="form-radio-item">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" class="form-radio validate[required]" id="input_62_1" name="gender" value="Female" required="" />
+              <label id="label_input_62_1" for="input_62_1"> Female </label>
+            </span>
+          </div>
+        </div>
+      </li>
+	  <li class="form-line jf-required" data-type="control_textbox" id="id_70">
+        <label class="form-label form-label-top form-label-auto" id="label_70" for="input_70">
+          College/Organisation Name
+          <span class="form-required">
+            <font color="red">*</font>
+          </span>
+        </label>
+        <div id="cid_70" class="form-input-wide jf-required">
+          <input type="text" id="input_70" name="college_name" data-type="input-textbox" class="form-textbox validate[required]" size="20" value="" data-component="textbox" aria-labelledby="label_70" required="" />
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_address" id="id_6">
+        <label class="form-label form-label-top form-label-auto" id="label_6" for="input_6_addr_line1">
+		   state
+          <span class="form-required">
+            <font color = "red">*</font>
+          </span>
+        </label>
+        <div id="cid_6" class="form-input-wide jf-required">
+          <div summary="" class="form-address-table jsTest-addressField">
+		    <span class="form-address-line form-address-country-line jsTest-address-lineField ">
+                <span class="form-sub-label-container " style="vertical-align:top">
+                  <select class="form-dropdown validate[required] form-address-country noTranslate" name="state" id="input_6_country" data-component="country" required="" aria-labelledby="label_6 sublabel_6_country">
+                    <option value="Andaman and Nicobar"> Andaman and Nicobar Islands </option>
+                    <option value="AndhraPradesh"> AndhraPradesh </option>
+                    <option value="Arunachal Pradesh"> Arunachal Pradesh </option>
+                    <option value="Assam"> Assam</option>
+                    <option value="Bihar"> Bihar</option>
+                    <option value="Chattisgarh"> Chattisgarh </option>
+                    <option value="Dadra and Nagar Haveli"> Dadra and Nagar Haveli</option>
+                    <option value="Daman and Diu"> Daman and Diu </option>
+                    <option value="Delhi"> Delhi</option>
+                    <option value="Delhi"> Goa </option>
+                    <option value="Gujarat "> Gujarat </option>
+                    <option value="Haryana"> Haryana </option>
+                    <option value="Himachal Pradesh"> Himachal Pradesh </option>
+                    <option value="Jammu and Kashmir"> Jammu and Kashmir </option>
+                    <option value="Jharkhand"> Jharkhand </option>
+                    <option value="Karnataka"> Karnataka </option>
+                    <option value=" Kerala"> Kerala </option>
+                    <option value="Lakshadweep"> Lakshadweep </option>
+                    <option value="Madhya Pradesh"> Madhya Pradesh </option>
+                    <option value=" Maharashtra"> Maharashtra</option>
+                    <option value=" Manipur"> Manipur</option>
+                    <option value="Meghalaya"> Meghalaya </option>
+                    <option value="Mizoram"> Mizoram</option>
+                    <option value="Nagaland"> Nagaland </option>
+                    <option value="Orissa"> Orissa</option>
+                    <option value="Pondicherry"> Pondicherry </option>
+                    <option value="Punjab"> Punjab</option>
+                    <option value="Rajasthan"> Rajasthan </option>
+                    <option value="Sikkim"> Sikkim</option>
+                    <option value="TamilNadu"> TamilNadu </option>
+                    <option value="Telangana">Telangan</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar pradesh">Uttar Pradesh</option>
+                    <option value="Uttaranchal">Uttaranchal</option>
+                    <option value="West Bengal">West Bengal</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <label class="form-sub-label" for="input_6_country" id="sublabel_6_country" style="min-height:13px" aria-hidden="false"> States</label>
+                </span>
+              </span>
+            </div>
+        </div>
+      </li>
+	  <li class="form-line jf-required" data-type="control_textbox" id="id_70">
+        <label class="form-label form-label-top form-label-auto" id="label_70" for="input_70">
+              City
+            <span class="form-required">
+                <font color="red">*</font>
+            </span>
+        </label>
+            <div id="cid_70" class="form-input-wide jf-required">
+              <input type="text" id="input_70" name="city" data-type="input-textbox" class="form-textbox validate[required]" size="20" value="" data-component="textbox" aria-labelledby="label_70" required="" />
+            </div>
+      </li>
+	    <li class="form-line jf-required" data-type="control_textarea" id="id_37">
+            <label class="form-label form-label-top form-label-auto" id="label_37" for="input_37">
+                 What is your idea ...?
+                <span class="form-required">
+                 <font color="red">*</font>
+                </span>
+            </label>
+            <div id="cid_37" class="form-input-wide jf-required">
+               <textarea id="input_37" class="form-textarea validate[required]" name="idea" cols="40" rows="6" data-component="textarea" required="" aria-labelledby="label_37"></textarea>
+            </div>
+        </li>
+          <li class="form-line jf-required" data-type="control_textarea" id="id_38">
+            <label class="form-label form-label-top form-label-auto" id="label_38" for="input_38">
+                 What challenge/problem does it address ?
+                <span class="form-required">
+                    <font color="red">*</font>
+                </span>
+            </label>
+                <div id="cid_38" class="form-input-wide jf-required">
+                   <div class="form-textarea-limit">
+                     <span>
+                       <textarea id="input_38" class="form-textarea validate[required]" name="problem" cols="40" rows="6" data-component="textarea" required=""></textarea>
+                       <div class="form-textarea-limit-indicator">
+                            <span data-limit="250" type="Words" data-minimum="-1" data-typeminimum="None" id="input_38-limit">
+                                 0/250
+                            </span>
+                        </div>
+                     </span>
+                    </div>
+                </div>
+          </li>
+            <li class="form-line" data-type="control_radio" id="id_65">
+               <label class="form-label form-label-top form-label-auto" id="label_65" for="input_65"> Your academic background - Are you currently pursuing or did you pursue an academic or professional degree ? </label>
+                 <div id="cid_65" class="form-input-wide">
+                    <div class="form-multiple-column" data-columncount="3" role="group" aria-labelledby="label_65" data-component="radio">
+                    <span class="form-radio-item">
+                     <span class="dragger-item">
+                     </span>
+                      <input type="radio" class="form-radio" id="input_65_0" name="academic" value="Yes, I am." />
+               <label id="label_input_65_0" for="input_65_0"> Yes, I am. </label>
+                    </span>
+                    <span class="form-radio-item">
+                    <span class="dragger-item">
+                     </span>
+                       <input type="radio" class="form-radio" id="input_65_1" name="academic" value="Yes, I did." />
+                        <label id="label_input_65_1" for="input_65_1"> Yes, I did. </label>
+                    </span>
+                  <span class="form-radio-item">
+                     <span class="dragger-item">
+                     </span>
+                      <input type="radio" class="form-radio" id="input_65_2" name="academic" value="No, I am not." />
+                      <label id="label_input_65_2" for="input_65_2"> No, I am not. </label>
+                  </span>
+                        <span class="form-radio-item" style="clear:left">
+                          <span class="dragger-item">
+                           </span>
+                          <input type="radio" class="form-radio" id="input_65_3" name="academic" value="Other." />
+                          <label id="label_input_65_3" for="input_65_3"> Other. </label>
+                        </span>
+                  </div>
+             </div>
+           </li>
+        <li class="form-line" data-type="control_textbox" id="id_50">
+             <label class="form-label form-label-top form-label-auto" id="label_50" for="input_50"> Do you have a linkedin profile or a website about yourself? </label>
+        <div id="cid_50" class="form-input-wide">
+          <input type="text" id="input_50" name="link" data-type="input-textbox" class="form-textbox" size="20" value="" data-component="textbox" aria-labelledby="label_50" />
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_radio" id="id_46">
+        <label class="form-label form-label-top form-label-auto" id="label_46" for="input_46">
+          Are you part of a team ?
+          <span class="form-required">
+           <font color="red">*</font>
+          </span>
+        </label>
+        <div id="cid_46" class="form-input-wide jf-required">
+          <div class="form-multiple-column" data-columncount="3" role="group" aria-labelledby="label_46" data-component="radio">
+            <span class="form-radio-item">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" class="form-radio validate[required]" id="input_46_0" name="team" value="Yes" required="" />
+              <label id="label_input_46_0" for="input_46_0"> Yes </label>
+            </span>
+            <span class="form-radio-item">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" class="form-radio validate[required]" id="input_46_1" name="team" value="No" required="" />
+              <label id="label_input_46_1" for="input_46_1"> No </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_radio" id="id_67">
+        <label class="form-label form-label-top form-label-auto" id="label_67" for="input_67">
+          Have you done a hackathon before ?
+          <span class="form-required">
+              <font color="red">*</font>
+          </span>
+        </label>
+        <div id="cid_67" class="form-input-wide jf-required">
+          <div class="form-multiple-column" data-columncount="3" role="group" aria-labelledby="label_67" data-component="radio">
+            <span class="form-radio-item">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" class="form-radio validate[required]" id="input_67_0" name="hack_b" value="Yes." required="" />
+              <label id="label_input_67_0" for="input_67_0"> Yes. </label>
+            </span>
+            <span class="form-radio-item">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" class="form-radio validate[required]" id="input_67_1" name="hack_b" value="No." required="" />
+              <label id="label_input_67_1" for="input_67_1"> No. </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_52">
+        <label class="form-label form-label-top form-label-auto" id="label_52" for="input_52"> How did you hear about the hackathon ? </label>
+        <div id="cid_52" class="form-input-wide">
+          <input type="text" id="input_52" name="hear" data-type="input-textbox" class="form-textbox" size="20" value="" data-component="textbox" aria-labelledby="label_52" />
+        </div>
+      </li>
+        <div id="cid_52" class="form-input-wide">
+            <br>
+            <button type="submit">Register</button>
+        </div>
+      </ul>
+    </div>
+  </div>
+</form>
+</body>
+</html>
+
